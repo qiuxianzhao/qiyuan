@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>奇猿网络后台管理中心</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jsapi.js"></script>
+<script type="text/javascript" src="js/jquery.ba-resize.min.js"></script>
+</head>
+
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="index" target="_parent">首页</a></li>
+    <li>网站管理</li>
+    </ul>
+    </div>
+    <div class="mainbox">
+    <div class="mainleft">
+      <div class="leftinfo leftinfo2">
+        <div class="listtitle">站点信息</div>  
+        <div>
+          <ul class="newlist">
+            <li><i>主机名(端口)：</i>www.qyit5.com ( port:80 )</li>
+            <li><i>操作系统：</i>Linux</li>
+            <li><i>服务器软件：</i>Apache/2.4.18 (Win64) PHP/5.5.31</li>
+            <li><i>数据库平台：</i>5.5.48</li>
+            <li><i>程序版本：</i>QiYuan 1.0.0 development</li>
+          </ul>
+        </div>
+      </div>
+      <!--leftinfo end-->    
+    </div>
+    <div class="mainright">
+      <div class="dflist1">
+      <div class="listtitle">信息统计 <a class="more1">更多</a></div>    
+      <ul class="newlist">
+        <li><i>产品数：</i>215</li>
+        <li><i>文档数：</i>231</li>
+        <li><i>会员数：</i>1000</li>
+        <li><i>留言数：</i>220</li>    
+      </ul>        
+      </div>
+    </div>
+    <!--mainright end-->
+    
+    
+    </div>
+
+
+
+</body>
+<script type="text/javascript">
+	setWidth();
+	$(window).resize(function(){
+		setWidth();	
+	});
+	function setWidth(){
+		var width = ($('.leftinfos').width()-12)/2;
+		$('.infoleft,.inforight').width(width);
+	}
+</script>
+</html>
